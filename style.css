@@ -1,0 +1,13 @@
+.textBox{
+    display: flex;
+    align-items: center;
+    width:500px ;
+    height: 500px;
+    border: solid black;
+}
+.lineInner{
+    list-style: none;
+    height: 50px;
+    width: 400px;
+    border: solid red;
+}
