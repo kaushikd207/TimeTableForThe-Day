@@ -4,6 +4,7 @@
     justify-content: center;
     margin: auto;
     padding-right: 15px;
+    padding-bottom:40px;
     width:80vh ;
     height: 100vh;
     border: solid black;
@@ -11,6 +12,9 @@
 }.item{
     margin-top: 50px;
     width: 70%;
+}
+.textBox > button{
+    margin-top: 10px;
 }
 .textBox h2{
     justify-content: center;
@@ -28,6 +32,12 @@
     height: 5vh;
     width: 400px;
     border: solid red;
+}.lineInner p{
+    width: 60%;
+}
+.btn{
+    display: inline-block;
+    background-color: red;
 }
 .lineText{
     position:relative;
