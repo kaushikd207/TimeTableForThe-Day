@@ -8,6 +8,9 @@
     height: 100vh;
     border: solid black;
     flex-direction: column;
+}.item{
+    margin-top: 50px;
+    width: 70%;
 }
 .textBox h2{
     justify-content: center;
@@ -20,9 +23,9 @@
 }
 .lineInner{
     list-style: none;
-    padding: 50px 15px;
-    padding-right: 25px;
-    height: 50px;
+    padding: 5vh;
+    padding-right: 5vh;
+    height: 5vh;
     width: 400px;
     border: solid red;
 }
