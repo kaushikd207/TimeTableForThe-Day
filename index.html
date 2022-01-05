@@ -10,70 +10,38 @@
 </head>
 
 <body>
-    <div id=textBox class="textBox">
-        <input class="item" type="text" placeholder="Enter Your Task">
-        <button>Add</button>
+    <div id="textBox" class="textBox">
+        <form id="addTask">
+            <input class="item" type="text" placeholder="Enter Your Task">
+            <button>Add</button>
+        </form>
         <h1>Set Your Daily Task Table</h1>
-<div id=taskList>
-        <ul>
-            <li class="lineInner">
-                <p>Hello</p>
-                <button class="btn">Done</button>
-            </li>
-            <li class="lineInner">
-                <p>hello</p>
-                <button class="btn">Done</button>
-            </li>
-            <li class="lineInner">
-                <p>hello</p>
-                <button class="btn">Done</button>
-            </li>
-            <li class="lineInner">
-                <p>hello</p>
-                <button class="btn">Done</button>
-            </li>
-            <li class="lineInner">
-                <p>hello</p>
-                <button class="btn">Done</button>
-            </li>
-        </ul>
-    </div>
+        <div id="taskList">
+            <ul>
+                <!-- <li class="lineInner">
+                    <p>Task1</p>
+                    <button class="btn">Done</button>
+                </li>
+                <li class="lineInner">
+                    <p>Task2</p>
+                    <button class="btn">Done</button>
+                </li>
+                <li class="lineInner">
+                    <p>Task3</p>
+                    <button class="btn">Done</button>
+                </li>
+                <li class="lineInner">
+                    <p>Task4</p>
+                    <button class="btn">Done</button>
+                </li>
+                <li class="lineInner">
+                    <p>Task5</p>
+                    <button class="btn">Done</button>
+                </li> -->
+            </ul>
+        </div>
     </div>
 </body>
-<script>
-    // const wrap = document.querySelector('.lineText li:nth-child(2).lineInner');
-    // console.log(wrap);
-   
-  var btns=document.querySelectorAll('#taskList .btn');
-  Array.from(btns).forEach(function(btn){
-      btn.addEventListener('click',function(e){
-        const li=e.target.parentElement;
-        li.parentNode.removeChild(li);
-
-      })
-  })
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
+<script src="app.js"></script>
 
 </html>

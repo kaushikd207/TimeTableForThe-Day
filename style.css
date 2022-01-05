@@ -6,7 +6,7 @@
     padding-right: 15px;
     padding-bottom:40px;
     width:80vh ;
-    height: 100vh;
+    height: auto;
     border: solid black;
     flex-direction: column;
 }.item{
@@ -25,21 +25,30 @@
     display: block;
 
 }
-.lineInner{
+li{
     list-style: none;
     padding: 5vh;
     padding-right: 5vh;
     height: 5vh;
     width: 400px;
     border: solid red;
-}.lineInner p{
+}li p{
     width: 60%;
 }
-.btn{
+li button{
     display: inline-block;
     background-color: red;
 }
 .lineText{
     position:relative;
     
+}
+#taskList{
+    display: flex;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+
 }
