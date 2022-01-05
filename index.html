@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="textBox">
+    <div id=textBox class="textBox">
         <input class="item" type="text" placeholder="Enter Your Task">
         <button>Add</button>
         <h1>Set Your Daily Task Table</h1>
-        
-        <ul class="lineText">
+<div id=taskList>
+        <ul>
             <li class="lineInner">
                 <p>Hello</p>
                 <button class="btn">Done</button>
@@ -38,6 +38,42 @@
             </li>
         </ul>
     </div>
+    </div>
 </body>
+<script>
+    // const wrap = document.querySelector('.lineText li:nth-child(2).lineInner');
+    // console.log(wrap);
+   
+  var btns=document.querySelectorAll('#taskList .btn');
+  Array.from(btns).forEach(function(btn){
+      btn.addEventListener('click',function(e){
+        const li=e.target.parentElement;
+        li.parentNode.removeChild(li);
+
+      })
+  })
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 
 </html>
