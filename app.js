@@ -1,5 +1,6 @@
   
  const list=document.querySelector('#taskList ul');
+ var taskList = [];
  list.addEventListener('click',function(e){
      if(e.target.className =='btn'){
          const li=e.target.parentElement;
@@ -9,18 +10,25 @@
 
  //add task function
  const addTask=document.forms['addTask'];
+ 
  addTask.addEventListener('submit', function(e){
 
 
      e.prevent
      e.preventDefault();
      const value = addTask.querySelector('input[type="text"]').value;
+
      
 
     //  create task 
     const li =document.createElement('li');
     const taskName = document.createElement('p');
     const btn= document.createElement('button');
+
+    
+    taskList.push(value)
+    window.localStorage.setItem("taskList", JSON.stringify(taskList));
+
 
 
     btn.textContent='done';
